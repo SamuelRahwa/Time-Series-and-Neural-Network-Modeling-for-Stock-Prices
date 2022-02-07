@@ -255,7 +255,7 @@ I need create models that reduce errors in their predicitions and make clear for
 
 # For More Information
 
-Please review my full technical analysis in [Jupyter Notebook]() or my nontechnical analysis in [Presentation]().
+Please review my full technical analysis in [Jupyter Notebook](https://github.com/SamuelRahwa/Time-Series-and-Neural-Network-Modeling-for-Stock-Prices/tree/main/Modeling) or my nontechnical analysis in [Presentation](https://github.com/SamuelRahwa/Time-Series-and-Neural-Network-Modeling-for-Stock-Prices/blob/main/Time%20Series%20Modeling%20vs%20Neural%20Network%20Modeling%20for%20Stock%20Prices.pdf).
 
 For any additional questions, please contact **Samuel Rahwa at samuelaaronrahwa@gmail.com**
 
@@ -263,9 +263,10 @@ For any additional questions, please contact **Samuel Rahwa at samuelaaronrahwa@
 # Repository Structure
 
 ```
-├── Presentation                                   <- PDF version of project presentation
-├── Modeling                                       <- Narrative documentations of my analysis in Jupyter notebooks
-├── Images                                         <- Both sourced externally and generated from code
 ├── Data                                           <- Both sourced externally and generated from code
-└── README.md                                      <- The top-level README for reviewers of this project
+├── Images                                         <- Both sourced externally and generated from code
+├── Modeling                                       <- Narrative documentations of my analysis in Jupyter notebooks
+├── README.md                                      <- The top-level README for reviewers of this project
+└── Presentation                                   <- PDF version of project presentation
+
 ```
