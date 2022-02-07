@@ -26,7 +26,7 @@ I need create models that reduce errors in their predicitions and make clear for
 
 # Data
 
-* I used 6 years of historical stock prices from Yahoo Finance and the Alpha Vantage Api for The Coca-Cola Company (KO) and American Airlines (AAL).
+* I used 6 years of historical adjusted closing stock prices for The Coca-Cola Company (KO) and American Airlines (AAL).
 
     - Only the Adjusted Closing Price for both Time Series Models and Neural Networks.
         * Volume will be the exogenous variable for the Time Series Models.
@@ -137,7 +137,7 @@ I need create models that reduce errors in their predicitions and make clear for
         - AIC of -9001.34 
         - RMSE of 3.21
     - Forecast:
-        - Expects a growth of 0.0 %. It shows a neutral growth rate over time.
+        - Expects a growth of 0.0 %. The graph shows a neutral growth rate over time.
         
 * Facebook Prophet (KO)
     - Untransformed Model:
@@ -145,37 +145,41 @@ I need create models that reduce errors in their predicitions and make clear for
     - Log Transformed Model:
         - RMSE of 8.94
     - Forecast:
-        - Expects a growth of -2.29 % after 90 days. It maintains a cyclical growth rate over time.
+        - Expects a growth of -2.29 % after 90 days. It maintains a cyclical growth
+          rate over time.
 
 
 
 * Fit ARIMA (AAL)
     - Untransformed Model:
-        - AIC of 2292.42
-        - RMSE of 2.17
+        - AIC of 3876.43
+        - RMSE of 7.09
     - Log Transformed Model:
-        - AIC of -8955.07
-        - RMSE of 2.08
+        - AIC of -5853.49
+        - RMSE of 5.54
     - Forecast:
-        - Expects a growth of 3.66 % after 90 days
+        - Expects a growth of 5.8 % after 90 days
 
 * Auto-ARIMA (AAL) 
     - Untransformed Model:
-        - AIC of 2276.82
-        - RMSE of 3.20
+        - AIC of 3890.05
+        - RMSE of 4.01
     - Log Transformed Model:
-        - AIC of -9001.34
-        - RMSE of 3.21
+        - AIC of -5976.43
+        - RMSE of 3.93
     - Forecast:
-        - Expects a growth of 0.0 %. It shows a neutral growth rate over time.
+        - Expects a growth of 0.32 %. The graph shows a neutral growth rate over
+          time.
         
 * Facebook Prophet (AAL)
     - Untransformed Model:
-        - RMSE of 9.45
+        - RMSE of 21.30
     - Log Transformed Model:
-        - RMSE of 8.94
+        - RMSE of 13.91
     - Forecast:
-        - Expects a growth of -2.29 % after 90 days. It maintains a cyclical growth rate over time.
+        - Expects a growth of 41.96 % after 90 days. 
+        
+
         
 
 
@@ -184,36 +188,36 @@ I need create models that reduce errors in their predicitions and make clear for
 
 
 * Simple RNN (KO)
-    - Prediction RMSE: 0.74 
+    - Prediction RMSE: 0.73 
         
 * LSTM (KO) 
-    - Prediction RMSE: 0.72
+    - Prediction RMSE: 0.71
         
 * LSTM with Regularization (KO)
-    - Prediction RMSE: 0.74
+    - Prediction RMSE: 0.77
         
 * GRU (KO) 
-    - Prediction RMSE: 0.70
+    - Prediction RMSE: 0.73
         
 * GRU withRegularization (KO)
-    - Prediction RMSE: 0.70
+    - Prediction RMSE: 1.51
 
 
 
 * Simple RNN (AAL)
-    - Prediction RMSE: 0.68
+    - Prediction RMSE: 0.66
 
 * LSTM (AAL) 
-    - Prediction RMSE: 0.69 
+    - Prediction RMSE: 0.62 
  
 * LSTM with Regularization (AAL)
-    - Prediction RMSE: 0.79 
+    - Prediction RMSE: 0.63 
 
 * GRU (AAL) 
-    - Prediction RMSE: 0.67 
+    - Prediction RMSE: 0.68
 
 * GRU with Regularization (AAL)
-    - Prediction RMSE: 0.67 
+    - Prediction RMSE: 2.81 
 
 
 
@@ -259,8 +263,9 @@ For any additional questions, please contact **Samuel Rahwa at samuelaaronrahwa@
 # Repository Structure
 
 ```
-├── Presentation                                   <- Both sourced externally and generated from code
+├── Presentation                                   <- PDF version of project presentation
 ├── Modeling                                       <- Narrative documentations of my analysis in Jupyter notebooks
+├── Images                                         <- Both sourced externally and generated from code
 ├── Data                                           <- Both sourced externally and generated from code
 └── README.md                                      <- The top-level README for reviewers of this project
 ```
